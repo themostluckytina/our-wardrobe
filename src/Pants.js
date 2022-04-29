@@ -1,10 +1,19 @@
 import { useState } from "react";
+import ButtonPants from "./ButtonPants";
 import { dataPants } from './dataPants';
 import LogicPants from "./LogicPants";
 
 function Pants(){
 
     const [pants, setPants] = useState(dataPants);
+
+    const chooseShortPants =(longs)=>{
+        const newShortList = dataPants.filter(thing =>
+            thing.longs === longs);
+            setPants(newShortList)
+
+    }
+
     
     return( <div className="top">
         <div className="main">
@@ -13,6 +22,8 @@ function Pants(){
 
             <h3>Брюки, или просто штаны – это общепризнанное название разновидности верхней одежды, покрывающей нижнюю часть туловища и каждую ногу в отдельности. Благодаря удобству и практичности, этот предмет стал неотъемлемой частью как мужского, так и женского гардероба. А множество интересных фасонов и моделей позволяют создавать стильные и эффектные образы для любых случаев и мероприятий.</h3>
         </div>
+
+        <ButtonPants filterShort={chooseShortPants} />
     
 
         <LogicPants newPants={pants} />

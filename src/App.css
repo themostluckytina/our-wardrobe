@@ -24,6 +24,7 @@ h2{
   color: #ac7e4c;
   text-shadow: 1px 1px black;
   font-size: 33px;
+  text-align: center;
 }
 .main{
   display: flex;
@@ -178,4 +179,39 @@ ul{
   color: #ac7e4c;
   font-style: italic;
   font-weight: bold;
+}
+
+.search{
+  margin: 0;
+  color: #e6e6e6;
+}
+span{
+  color: #ac7e4c;
+}
+.letters{
+  font-size: 18px;
+}
+.findOut{
+  display: flex;
+}
+.letter{
+  margin:  12px;
+  font-size: 19px;
+  font-weight: bold;
+  color: black;
+}
+.letter:hover{
+  color:#ac7e4c;
+}
+
+.foot{
+  font-size: 21px;
+  color: black;
+}
+.foot:hover{
+  color: #ac7e4c;
+}
+.plus{
+  font-size: 12px;
+  text-align: center;
 }

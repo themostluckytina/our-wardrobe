@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { dataTwo } from './dataTwo';
-import Shoes from './Shoes';
+
 
 function LogicShoes({formulaShoes}){
 

@@ -43,6 +43,10 @@ function Home(){
         <button onClick={pushNext} className='next'>вперед</button>
         </div>
        
+       <div>
+       <p class="end">© 2022 VP-dev Company, Inc. · Все права защищены.</p>
+       <p className='plus'>Источник: https://obliqo.ru/</p>
+       </div>
         </div>
     )
 }

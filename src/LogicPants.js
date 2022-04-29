@@ -1,6 +1,6 @@
-import { dataPants } from './dataPants';
+
 import { useState } from 'react';
-import Pants from './Pants';
+
 
 
 

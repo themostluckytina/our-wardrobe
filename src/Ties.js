@@ -1,12 +1,21 @@
 import { dataThree } from './dataThree';
 import { useState } from 'react';
 import LogicTies from "./LogicTies";
+import ButtonTie from './ButtonTie';
 
 
 
 function Ties(){
 
     const [ties, setTies] = useState(dataThree);
+
+    const tieList = (sort) => {
+    const newTieList = dataThree.filter(neck =>
+        neck.sort===sort);
+    setTies(newTieList)    
+
+   }
+
     
     return( <div className="top">
         <div className="main">
@@ -14,6 +23,9 @@ function Ties(){
             <img src='https://obliqo.ru/wp-content/uploads/2021/08/vse-vidy-galstukov-fasony-i-tkani-dizajn-vidy-uzlov-i-jetiket.jpg' width={420} alt='tie'/>
 
             <h3>Полоска ткани, которую особым, импозантным образом обвязывают вокруг шеи (это и есть галстук), практического смысла не имеет и одеждой не считается. Галстук не греет, не прикрывает, но без него мужской костюм теряет презентабельность, торжественность и строгость. Носимый когда-то египетской знатью, аристократами Китая и римскими легионерами, галстук и сегодня – знак благополучия и символ социального статуса.</h3>
+            
+            <ButtonTie filter={tieList} />
+
             <LogicTies newTies={ties} />
         </div>
         <div className="main">

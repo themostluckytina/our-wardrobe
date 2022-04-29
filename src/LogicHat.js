@@ -1,8 +1,5 @@
-import { dataHats } from './dataHats';
+
 import { useState } from 'react' ;
-import Hats from './Hats';
-
-
 
 function LogicHat({newHat}){
 

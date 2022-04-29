@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { dataThree } from './dataThree';
-import Ties from './Ties';
+
 
 
 function LogicTies({newTies}){

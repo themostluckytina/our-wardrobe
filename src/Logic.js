@@ -1,9 +1,3 @@
-import { useState } from 'react';
-import { data } from './data';
-import Buttons from './Buttons';
-import Clothes from './Clothes';
-
-
 function Logic({formula}){
 
     return( <div className="products">
@@ -19,6 +13,7 @@ function Logic({formula}){
         <div className='box'>
                 <h3 className='name'>{name} </h3>
                 <p className='description'>{description} </p>
+                <p className='search'>{searchTerm} </p>
         </div>
 
     </div>
